@@ -19,3 +19,13 @@ Azure function : To Validate the JSON Data
 Azure SQL Server : Destination
 
 ## Create S3 bucket in AWS :
+
+![Screenshot (505)](https://github.com/shekharj21/shekharj21/assets/54074505/3b9424b0-d43e-4530-90d7-464855d47874)
+
+1. login to AWS portal and create S3 Bucket.
+2. Add folder 2023
+3. add folder 12 inside 2023
+4. Add folder 15 inside 12
+5. This structure of folder desribes Year----> Month-----> Day------>
+6. Add the file inside folder "15"
+   

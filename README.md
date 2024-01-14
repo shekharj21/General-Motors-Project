@@ -13,3 +13,9 @@
 ## Project Architecture :
 ![Screenshot (504)](https://github.com/shekharj21/shekharj21/assets/54074505/28e9998a-9cb4-4eda-9fba-289873de9c84)
 
+AWS S3 : Where JSON data is Stored
+Azure Data Factory : To move the data 
+Azure function : To Validate the JSON Data
+Azure SQL Server : Destination
+
+## Create S3 bucket in AWS :

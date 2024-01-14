@@ -1,6 +1,9 @@
 # General-Motors-Project
 
 ## Understanding the UseCase :
+
+![Screenshot (501)](https://github.com/shekharj21/shekharj21/assets/54074505/c05c2615-69b8-49f9-858b-4f068b7b64e5)
+
 1. Vehicel has thord party IoT device which will send the telemetry data (in JSON Format) over the AWS cloud.
 2. We need to move the Data from third party AWS to GeneraMotors Azure Cloud.
 3. You need to validate the JSON SOmetimes it could incomplete or wrong JSON which needs to be rejected.

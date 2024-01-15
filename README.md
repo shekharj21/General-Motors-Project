@@ -39,3 +39,5 @@
 3. Inside storage account, Click on Container and add a Container named as "input".
 4. Inside The input Add a Directory named as "Landing".
 
+## Create a Data factory Account :
+![Screenshot (507)](https://github.com/shekharj21/shekharj21/assets/54074505/a3b43644-b850-473d-a03f-7911cb069646)

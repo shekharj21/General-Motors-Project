@@ -28,4 +28,14 @@
 4. Add folder 15 inside 12
 5. This structure of folder desribes Year----> Month-----> Day------>
 6. Add the file inside folder "15"
-   
+
+## create Storage Account and add landing Folder :
+
+![Screenshot (506)](https://github.com/shekharj21/shekharj21/assets/54074505/ae46bb5c-fe51-4fef-b815-260c7a03bf75)
+
+
+1. Create a Resource Group first.
+2. Create a Storage Account in it.
+3. Inside storage account, Click on Container and add a Container named as "input".
+4. Inside The input Add a Directory named as "Landing".
+

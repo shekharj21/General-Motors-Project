@@ -41,3 +41,19 @@
 
 ## Create a Data factory Account :
 ![Screenshot (507)](https://github.com/shekharj21/shekharj21/assets/54074505/a3b43644-b850-473d-a03f-7911cb069646)
+
+
+## Running a Pipeline :
+
+![Screenshot (517)](https://github.com/shekharj21/shekharj21/assets/54074505/65e4f80b-946b-466d-a128-c7502da5126b)
+
+1. We know that Source of our data is S3 and Destination is ADLS.
+2. We will create a linked service for S3 and ADLS so we can use it in Azure Data Factory.
+3. After Successfully connecting, we can open data factory and can click on author tab.
+4. in the author tab, select create pipeline and give aname to it.
+5. in the source add S3 and hardcode the destination because we want to collect IOt information everydaay and in S3 the files are in this format 'iotsendordata/YYYY/MM/dd'
+   - @concat(formatDateTime(utcnow(), 'yyyy'), '/', formatDateTime(utcnow(), 'MM'), '/', formatDateTime(utcnow(), 'dd'), '/')
+6. Similarly, At the destination, the data is in Landing folder and we want the same format like 'YYYY/MM/dd'. We need to hardcode with the following code.
+   -@concat('landing/'formatDateTime(utcnow(), 'yyyy'), '/', formatDateTime(utcnow(), 'MM'), '/', formatDateTime(utcnow(), 'dd'), '/')
+7. ADF will take the iot data every day so make sure while running the pipeline, that day's folder is available in S3 otherwise it will return error.
+8. Following is the output of debug operation of ADF pipeline.

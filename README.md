@@ -57,3 +57,16 @@
    -@concat('landing/'formatDateTime(utcnow(), 'yyyy'), '/', formatDateTime(utcnow(), 'MM'), '/', formatDateTime(utcnow(), 'dd'), '/')
 7. ADF will take the iot data every day so make sure while running the pipeline, that day's folder is available in S3 otherwise it will return error.
 8. Following is the output of debug operation of ADF pipeline.
+
+## CreatinG azure Function for JSON Validation :
+![Screenshot (518)](https://github.com/shekharj21/shekharj21/assets/54074505/e3b3708f-ba95-438a-a4b6-4d5ba1be14b0)
+
+We Will be using Azure Function for validating the json file into the landing folder in ADFS. 
+1. We will create a function App with default settings.
+2. go to the resource after deployemnet, Click on Create Function & Select the details.
+3. After creating function, Select Integration
+
+### OUTPUT :
+![Screenshot (519)](https://github.com/shekharj21/shekharj21/assets/54074505/df3badad-b0eb-4a99-9c3b-fc67444f63a3)
+![Screenshot (520)](https://github.com/shekharj21/shekharj21/assets/54074505/33717b82-4e39-4519-ba71-67928158a472)
+![Screenshot (521)](https://github.com/shekharj21/shekharj21/assets/54074505/0a21f828-4cb6-4120-9b78-48dc623ea6f0)
